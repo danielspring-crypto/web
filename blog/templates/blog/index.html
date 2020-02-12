@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my blog</title>
+</head>
+<body>
+{% for post in posts %}
+	post title : {{ post.title }}<br>
+	post text : {{ post.text }}<br>
+	by {{ post.username }} / 
+	at {{ post.uploaded_time }}
+	<br><br>
+{% endfor %}
+</body>
+</html>
